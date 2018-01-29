@@ -15,9 +15,10 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.h2.Driver</property>
-        <property name="connection.url">jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE</property>
+        <property name="connection.url">jdbc:h2:http://127.0.1.1:8082/test</property>
+<!--         <property name="connection.url">jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE</property> -->
         <property name="connection.username">sa</property>
-        <property name="connection.password"/>
+        <property name="connection.password">sa</property>
 
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
